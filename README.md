@@ -1,19 +1,11 @@
-# login
+# 组件结构:
 
-## Project setup
+```js
+|- components/ (组件)
+   |- fixture/ (装修组件)
+      |- FixtureCore.vue (核心vue文件)
+      |- LoginNav.vue (logo组件)
+      |- Ttitle.vue (商品卡片组件)
+   |- result/ (效果图组件)
+   |- HomeNav.vue /(首页头部组件)
 ```
-npm install
-```
-
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
-
-### Compiles and minifies for production
-```
-npm run build
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
