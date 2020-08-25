@@ -8,6 +8,16 @@ Vue.use(VueRouter)
     name: 'Home',
     component: ()=>import("../views/Home"),
   },
+  {
+    path: '/seconds',
+    name: 'seconds',
+    component: ()=>import("../components/seconds/seconds"),
+  },
+  {
+    path: '/bespeak',
+    name: 'bespeak',
+    component: ()=>import("../components/bespeak/bespeak"),
+  },
   
 ]
 
