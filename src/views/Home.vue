@@ -1,18 +1,14 @@
 <template>
   <div>
-  <div>陈延钊</div>
-
+    <div></div>
   </div>
 </template>
 
 <script>
-export default {
-
-}
+export default {};
 </script>
-
 <style>
-div{
+div {
   font-size: 0.1rem;
 }
 </style>
