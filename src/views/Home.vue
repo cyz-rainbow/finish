@@ -292,6 +292,7 @@
   </div>
 </template>
 <script>
+
 export default {
   data() {
     return {
@@ -548,5 +549,5 @@ footer {
 .template_top a .iconfont {
   color: rgb(199, 199, 199);
   font-size: 0.6rem;
-}
+  }
 </style>
