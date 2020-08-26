@@ -18,7 +18,16 @@ Vue.use(VueRouter)
     name: 'bespeak',
     component: ()=>import("../components/bespeak/bespeak"),
   },
-  
+  {
+    path: '/fixtureCore',//免费预约页面
+    name: 'fixtureCore',
+    component: ()=>import("../components/fixture/fixtureCore.vue"),
+  },
+  {
+    path: '/ResultCore',//免费预约页面
+    name: 'ResultCore',
+    component: ()=>import("../components/result/ResultCore.vue"),
+  },
 ]
 
 const router = new VueRouter({

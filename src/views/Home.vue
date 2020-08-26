@@ -1,5 +1,6 @@
 <template>
   <div>
+  <HomeNav/>
     <header>
       <van-swipe class="my-swipe" :autoplay="3000" indicator-color="#39c894">
         <van-swipe-item>
@@ -29,11 +30,11 @@
       </van-swipe>
     </header>
     <section>
-      <div class="section_div">
+      <div class="section_div" @click="click">
         <div style="background-color:#39c894" class="iconfont icon-case"></div>
         <div>装修方案</div>
       </div>
-      <div class="section_div">
+      <div class="section_div" @click="clickResultCore">
         <div style="background-color:#feb505" class="iconfont icon-pics"></div>
         <div>效果图</div>
       </div>
@@ -49,7 +50,7 @@
         <div style="background-color:#1b9af7" class="iconfont icon-decorate"></div>
         <div>装修攻略</div>
       </div>
-      <div class="section_div">
+      <div class="section_div" >
         <div style="background-color:#7b72e9" class="iconfont icon-bank"></div>
         <div>装修贷款</div>
       </div>
@@ -291,9 +292,10 @@
 <script>
 import second from "../components/seconds/second"
 import seconda from "../components/seconds/seconda"
+import HomeNav from "../components/HomeNav"
 export default {
   components:{
-    second,seconda
+    second,seconda,HomeNav
   },
   data() {
     return {
@@ -309,6 +311,13 @@ export default {
     },
     clickbao(){//点击跳转十秒报价页面
       this.$router.push("/seconds")
+    },
+    click(){//点击跳转修改方案页面
+      this.$router.push("/fixtureCore")
+    },
+    clickResultCore(){//点击跳转效果图页面
+      this.$router.push("/ResultCore")
+
     }
   }
 };
@@ -318,6 +327,7 @@ export default {
 header {
   width: 100%;
   height: 3rem;
+  margin-top: 1.5rem;
 }
 .my-swipe .van-swipe-item {
   color: #fff;
