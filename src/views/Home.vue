@@ -53,11 +53,11 @@
         <div style="background-color:#7b72e9" class="iconfont icon-bank"></div>
         <div>装修贷款</div>
       </div>
-      <div class="section_div">
+      <div class="section_div" @click="clickyue">
         <div style="background-color:#ff4351" class="iconfont icon-pencle"></div>
         <div>免费预约</div>
       </div>
-      <div class="section_div">
+      <div class="section_div" @click="clickbao">
         <div style="background-color:#fe8864" class="iconfont icon-ten"></div>
         <div>十秒报价</div>
       </div>
@@ -268,14 +268,11 @@
         </div>
       </div>
 
-      <div class="template_ge"></div>
-      <div
-        class="footer_wenzi"
-      >&nbsp;房先森互联网家装有别于传统装修公司与其他装修中介平台，以自营模式整合设计师与项目经理，利用互联网将工地进行在线全景直播，通过去中间环节，提供装修套餐 + 个性化定制服务。</div>
-
-      <div class="template_ge"></div>
       <div class="footer_wenzi">
-        <img width="100%" src="http://localhost:8080/设计图/切图/case/wenbu.png" alt />
+      <second />
+      </div>
+      <div class="footer_wenzi">
+        <seconda/>
       </div>
     </footer>
 
@@ -292,8 +289,12 @@
   </div>
 </template>
 <script>
-
+import second from "../components/seconds/second"
+import seconda from "../components/seconds/seconda"
 export default {
+  components:{
+    second,seconda
+  },
   data() {
     return {
       isimg: true
@@ -302,6 +303,12 @@ export default {
   methods: {
     isshow() {
       this.isimg = false;
+    },
+    clickyue(){//点击跳转免费预约页面
+      this.$router.push("/bespeak")
+    },
+    clickbao(){//点击跳转十秒报价页面
+      this.$router.push("/seconds")
     }
   }
 };
@@ -549,5 +556,5 @@ footer {
 .template_top a .iconfont {
   color: rgb(199, 199, 199);
   font-size: 0.6rem;
-  }
+}
 </style>

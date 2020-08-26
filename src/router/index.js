@@ -9,12 +9,12 @@ Vue.use(VueRouter)
     component: ()=>import("../views/Home"),
   },
   {
-    path: '/seconds',
+    path: '/seconds',//十秒报价页面
     name: 'seconds',
     component: ()=>import("../components/seconds/seconds"),
   },
   {
-    path: '/bespeak',
+    path: '/bespeak',//免费预约页面
     name: 'bespeak',
     component: ()=>import("../components/bespeak/bespeak"),
   },
