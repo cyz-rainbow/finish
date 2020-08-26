@@ -7,7 +7,7 @@ Vue.use(VueRouter)
     path: '/',
     name: 'Home',
     component: ()=>import("../views/Home"),
-  },
+  }
   
 ]
 
