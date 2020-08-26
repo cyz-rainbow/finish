@@ -3,16 +3,16 @@
     <div class="wrap">
       <van-row type="flex" justify="space-between">
         <van-col span="6">
-          <span class="title"> 类型</span> <i class="iconfont icon-down"></i
+          <span class="title"> 用户</span> <i class="iconfont icon-down"></i
+        ></van-col>
+        <van-col span="6">
+          <span class="title"> 区域</span> <i class="iconfont icon-down"></i
         ></van-col>
         <van-col span="6">
           <span class="title"> 风格</span> <i class="iconfont icon-down"></i
         ></van-col>
         <van-col span="6">
-          <span class="title"> 面积</span> <i class="iconfont icon-down"></i
-        ></van-col>
-        <van-col span="6">
-          <span class="title"> 价格</span> <i class="iconfont icon-down"></i
+          <i class="iconfont icon-search" style="color:#39C894"></i
         ></van-col>
       </van-row>
     </div>

@@ -2,19 +2,19 @@
   <div>
     <HomeNav></HomeNav>
     <LoginNav></LoginNav>
-    <Ttitle></Ttitle>
+    <Title></Title>
   </div>
 </template>
 
 <script>
-import HomeNav from "../HomeNav";
-import LoginNav from "./LoginNav";
-import Ttitle from "./Ttitle";
+import HomeNav from "../HomeNav.vue";
+import LoginNav from "../result/LoginNav";
+import Title from "./Title";
 export default {
   components: {
-    LoginNav,
     HomeNav,
-    Ttitle,
+    LoginNav,
+    Title,
   },
 };
 </script>
