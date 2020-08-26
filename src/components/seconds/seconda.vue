@@ -40,7 +40,7 @@
   align-items: center;
 }
 .cont_diva i,.color{
-  color: green;
+  color: #39c894;
 }
 .cont_divc{
   color: #999;

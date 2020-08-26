@@ -92,14 +92,14 @@ export default {
 .icon {
   width: 1.2rem;
   height: 1.2rem;
-  border: 1px solid green;
+  border: 1px solid #39c894;
   border-radius: 50%;
   text-align: center;
   line-height: 0.8rem;
 }
 .icon i {
   font-size: 0.4rem;
-  color: green;
+  color: #39c894;
 }
 .pa {
   font-size: 0.27rem;
